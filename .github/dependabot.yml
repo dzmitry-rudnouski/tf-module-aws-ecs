@@ -1,0 +1,12 @@
+version: 2
+updates:
+- package-ecosystem: terraform
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: terraform-aws-modules/security-group/aws
+    versions:
+    - 3.17.0
+    - 3.18.0
